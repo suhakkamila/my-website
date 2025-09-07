@@ -1,0 +1,252 @@
+#block1 {
+    background: linear-gradient(135deg, #0A0A0A, #D4AF37);
+    color: #AA8F32;
+    font-family: 'MS Reference Specialty';
+    font-style: italic;
+    font-weight: lighter;
+    font-size: x-large;
+    padding: 20px;
+    text-align: left;
+    width: 1478px;
+    height: 100px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+#block7 {
+    background: linear-gradient(135deg, #0A0A0A, #D4AF37);
+    color: #0A0A0A;
+    padding: 20px;
+    text-align: right;
+    width: 1478px;
+    height: 80px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    font-size: x-large;
+    font-style: italic;
+    font-family: 'MS Reference Specialty';
+    font-weight: lighter;
+}
+
+.middle-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+}
+
+/* Блок 2: меню зліва */
+.block2 {
+    flex: 1.5; 
+    background: linear-gradient(135deg, #FAFAD2, #0A0A0A );
+    min-height: 453px; 
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    flex-shrink: 0;
+    min-width: 0;
+}
+
+/* Середній стовпець: блок 3 і блок 5 */
+.left-column {
+    flex: 2.5; 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-shrink: 0;
+    min-width:0;
+}
+
+/* Блок 3 */
+.block3 {
+    background-color: black;
+    color: #FAFAD2;
+    min-height: 110px; 
+    text-align: center;
+    width: 100%; /* займає всю ширину колонки */
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    height: auto;
+}
+
+/* Блок 6 */
+.block6 {
+    background: linear-gradient(135deg, #FAFAD2, #0A0A0A );
+    min-height: 162px; /* по висоті як блок 2 */
+    text-align: center;
+    width: 100%; /* займає всю ширину колонки */
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    flex-grow: 1;
+}
+
+/* Правий стовпець: блок 4 і блок 6 */
+.right-column {
+    flex: 1.5; 
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-shrink: 0;
+    min-width: 0;
+}
+
+/* Блок 4 */
+.block4 {
+    background: linear-gradient(135deg, #FAFAD2, #0A0A0A );
+    text-align: center;
+    min-height: 150px;
+    width: 100%; 
+    box-sizing: border-box;
+    color: #FFF8E7;
+    font-style: italic;
+    font-size: revert-layer;
+    height: auto;
+}
+
+/* Блок 5 */
+.block5 {
+    background: linear-gradient(135deg, #F8F4E3, #D4AF37);
+    min-height: 343px; 
+    text-align: center;
+    width: 100%; 
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    height: auto;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 0px;
+}
+
+/* Картинка в блоці 4 */
+.block4-img {
+    width: 170px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Стилізація заголовку меню */
+.menu-title {
+    color: darkgrey; 
+    font-size: 24px; 
+    font-weight: bold; 
+    font-style: normal; 
+    margin-bottom: 10px; 
+}
+
+/* Стилізація посилань */
+.menu-list a {
+    color: darkred; 
+    font-size: 18px; 
+    font-weight: normal; 
+    font-style: italic; 
+    text-decoration: none; 
+    display: block; 
+    margin: 5px 0; 
+}
+
+    /* Додатково: при наведенні курсор змінює колір */
+    .menu-list a:hover {
+        color: orange;
+    }
+
+/* Вступний абзац */
+.block6 .intro-text {
+    color: #FFF8E7;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+/* Список всередині блоку 6 */
+.block6 .care-list {
+    color: darkred;
+    font-size: 18px;
+    font-style: italic;
+    margin-left: 0px; /* відступ для списку */
+    margin-bottom: 0px;
+}
+
+.makeup-img {
+    width: 67%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.makeup-container {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: space-between; 
+    gap: 10px; 
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+}
+
+.makeup-left {
+    flex: 1; 
+    text-align: left;
+    min-width:0;
+}
+
+.makeup-center {
+    flex: 2; 
+    text-align: center;
+}
+
+.makeup-right {
+    flex: 1; 
+    text-align: right;
+    font-size: 16px;
+    color: darkblue;
+    min-width:0;
+}
+
+.block3 p{
+    white-space:normal;
+    word-wrap:break-word;
+    overflow-wrap: break-word;
+}
+
+.block2 p {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.block4 p {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.block5 p {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: #1C1C1C;
+}
+
+.block6 p {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.block4-img-square{
+    width: 270px;
+    height: 170px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/*посилання в блоці 5*/
+a{
+    color: darkgray;
+}
+
+
+
+
+
